@@ -1,0 +1,19 @@
+@import "variables";
+@import "navigation";
+@import "home-slide";
+@import "home-article";
+@import "cards";
+
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+    
+body {
+    margin: 0;
+}
+
+.container {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}

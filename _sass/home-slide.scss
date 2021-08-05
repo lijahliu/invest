@@ -1,0 +1,25 @@
+.home-slideimg {
+	background-image: url("/assets/images/stocks.jpg");
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: white;
+	position: relative;
+	z-index: 1;
+
+	.title {
+		padding-bottom: 4rem;
+	}
+}
+
+.grad::after {
+	background-image: linear-gradient(transparent, black);
+	content: "";
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}

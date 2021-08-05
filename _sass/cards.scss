@@ -1,0 +1,7 @@
+.hover-card {
+	transition: 0.1s ease-in transform;
+	&:hover {
+		transform: translateY(-10px);
+		transition: 0.1s ease-in transform;
+	}
+}

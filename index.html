@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="container-fluid px-0">
+  <div class="row mx-o">
+    <div class="col d-flex justify-content-center align-items-center">
+      <div class="home-slideimg section grad">
+         <h1 class="title">Welcome to Investing 101</h1>
+          <a class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="article-image" src="/assets/images/stocks.jpg"/>
+      </div>
+      <div class="col">
+        <h2>What are stocks?</h2>
+        <p>Simply put, stocks are a way to build wealth. They are an investment that means you own a share in the company that issued the stock. Stocks are how ordinary people invest in some of the most successful companies in the world. For companies, stocks are a way to raise money to fund growth, products and other initiatives.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class ="row">
+      <div class ="col-md">
+        <div class="card hover-card my-sm-2 my-lg-0">
+          <img class="card-img-top" src="/assets/images/stocks.jpg" alt="card" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Get Started</h4>
+            <p class="card-text">Learn about ETFs</p>
+          </div>
+        </div>
+      </div>
+      <div class ="col-md">
+        <div class="card hover-card my-2 my-lg-0">
+          <img class="card-img-top" src="/assets/images/stocks.jpg" alt="card" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Get Started</h4>
+            <p class="card-text">Learn about ETFs</p>
+          </div>
+        </div>
+      </div>
+      <div class ="col-md">
+        <div class="card hover-card my-2 my-lg-0">
+          <img class="card-img-top" src="/assets/images/stocks.jpg" alt="card" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Get Started</h4>
+            <p class="card-text">Learn about ETFs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div id="main-id">
+</div>
+
+<ul id="list">
+  
+</ul>
+
+
+
+<script>
+  
+ 
+  fetch('https://disease.sh/v3/covid-19/historical/all?lastdays=all')
+  .then(response => response.json())
+  .then(data => {
+    for (const date in data.cases) {
+      var ul = document.getElementById('list');
+    var li = document.createElement('li');
+    li.innerHTML = date + " : " + data.cases[date]  
+    list.appendChild(li)
+  }
+}
+  );  
+  
+
+  
+
+
+</script>
